@@ -85,7 +85,7 @@ def diffusion_app():
                     CodeformerUpscalerGenerator.app()
 
     app.queue(concurrency_count=2)
-    app.launch(debug=True, enable_queue=True)
+    app.launch(debug=True, enable_queue=True, share=True)
 
 
 if __name__ == "__main__":
